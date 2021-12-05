@@ -195,9 +195,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-}
-
 body.is-preload *,
 body.is-preload *:before,
 body.is-preload *:after {
@@ -2677,7 +2674,7 @@ button:disabled,
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  postiion: relative;
+  position: relative;
   margin: -2.5em 0 0 -2.5em;
 }
 
