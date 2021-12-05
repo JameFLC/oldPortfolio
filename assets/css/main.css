@@ -422,6 +422,7 @@ hr.major {
 /*Blob*/
 .blob {
   max-height: 0;
+  height: 0;
   z-index: -10;
 }
 .blobBottom {
