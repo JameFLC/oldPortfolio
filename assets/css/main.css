@@ -251,7 +251,7 @@ a {
 
 a:hover {
   border-bottom-color: transparent;
-  color: #41a6ff !important;
+  color: #83b6fe !important;
 }
 
 strong,
@@ -417,6 +417,17 @@ hr.major {
 
 .align-right {
   text-align: right;
+}
+
+/*Blob*/
+.blob {
+  max-height: 0;
+  z-index: -10;
+}
+.blobBottom {
+  transform: translate(0, -100%);
+  width: 50%;
+  margin-left: 50%;
 }
 
 /* Row */
@@ -1956,8 +1967,8 @@ header p {
 }
 
 .icon.style2:hover {
-  color: #41a6ff;
-  border-color: #41a6ff;
+  color: #83b6fe;
+  border-color: #83b6fe;
 }
 
 .icon.style2:active {
@@ -2267,8 +2278,8 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 select:focus,
 textarea:focus {
-  border-bottom-color: #41a6ff;
-  box-shadow: inset 0 -1px 0 0 #41a6ff;
+  border-bottom-color: #83b6fe;
+  box-shadow: inset 0 -1px 0 0 #83b6fe;
 }
 
 select {
@@ -2372,8 +2383,8 @@ input[type="radio"]:checked + label:before {
 
 input[type="checkbox"]:focus + label:before,
 input[type="radio"]:focus + label:before {
-  border-color: #41a6ff;
-  box-shadow: 0 0 0 1px #41a6ff;
+  border-color: #83b6fe;
+  box-shadow: 0 0 0 1px #83b6fe;
 }
 
 input[type="checkbox"] + label:before {
@@ -2595,8 +2606,8 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-  color: #41a6ff !important;
-  box-shadow: inset 0 0 0 2px #41a6ff;
+  color: #83b6fe !important;
+  box-shadow: inset 0 0 0 2px #83b6fe;
 }
 
 input[type="submit"]:active,
@@ -2638,7 +2649,7 @@ input[type="reset"].primary:hover,
 input[type="button"].primary:hover,
 button.primary:hover,
 .button.primary:hover {
-  background-color: #41a6ff;
+  background-color: #83b6fe;
 }
 
 input[type="submit"].primary:active,
