@@ -426,6 +426,7 @@ hr.major {
   z-index: -10;
 }
 .blobBottom {
+  -webkit-transform: translate(0, -100%);
   transform: translate(0, -100%);
   width: 50%;
   margin-left: 50%;
