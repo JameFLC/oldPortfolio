@@ -168,6 +168,7 @@ textarea {
 
 body {
   -ms-overflow-style: scrollbar;
+  position: relative;
 }
 
 @media screen and (max-width: 480px) {
@@ -418,18 +419,20 @@ hr.major {
 .align-right {
   text-align: right;
 }
-
-/*Blob*/
 .blob {
-  max-height: 0;
-  height: 0;
+  height: 0px;
+}
+.blobTop {
+  position: absolute;
+  top: 0;
   z-index: -10;
 }
 .blobBottom {
-  -webkit-transform: translate(0, -100%);
-  transform: translate(0, -100%);
-  width: 50%;
-  margin-left: 50%;
+  position: absolute;
+  bottom: 0;
+  /* width: 50%; */
+  /* margin-left: 50%; */
+  z-index: -10;
 }
 
 /* Row */
