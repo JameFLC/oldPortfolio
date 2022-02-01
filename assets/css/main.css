@@ -180,14 +180,7 @@ body {
 
 html {
   box-sizing: border-box;
-  background-image: linear-gradient(
-    to right bottom,
-    #ffffff,
-    #f4f4f4,
-    #e9e9e9,
-    #dedede,
-    #d3d3d3
-  );
+  background-color: #f4f4f4;
 }
 
 *,
