@@ -39,33 +39,21 @@
 
         initDeviceMotionEvent()
 
-        DeviceMotionEvent.requestPermission()
-            .then(response => {
-                if (response == 'granted') {
-                    window.addEventListener('devicemotion', (e) => {
-                        elemAcc.textContent = `${event.acceleration.x} ${event.acceleration.y} ${event.acceleration.z}`;
-                        elemAccg.textContent = `${event.accelerationIncludingGravity.x} ${event.accelerationIncludingGravity.y} ${event.accelerationIncludingGravity.z}`;
-                        elemRr.textContent = `${event.rotationRate.alpha} ${event.rotationRate.beta} ${event.rotationRate.gamma}`;
-                        elemInt.textContent = event.interval;
-                    })
-                }
-            })
-            .catch(console.error)
+        window.addEventListener('devicemotion', (e) => {
+            elemAcc.textContent = `${event.acceleration.x} ${event.acceleration.y} ${event.acceleration.z}`;
+            elemAccg.textContent = `${event.accelerationIncludingGravity.x} ${event.accelerationIncludingGravity.y} ${event.accelerationIncludingGravity.z}`;
+            elemRr.textContent = `${event.rotationRate.alpha} ${event.rotationRate.beta} ${event.rotationRate.gamma}`;
+            elemInt.textContent = event.interval;
+        })
 
-        DeviceOrientationEvent.requestPermission()
-            .then(response => {
-                if (response == 'granted') {
-                    addEventListener('deviceorientation', (event) => {
-                        elemAbs.textContent = event.absolute ? "True" : "False";
-                        elemAlp.textContent = event.alpha;
-                        elemBet.textContent = event.beta;
-                        elemGam.textContent = event.gamma;
+        addEventListener('deviceorientation', (event) => {
+            elemAbs.textContent = event.absolute ? "True" : "False";
+            elemAlp.textContent = event.alpha;
+            elemBet.textContent = event.beta;
+            elemGam.textContent = event.gamma;
 
-                        console.log("BABA")
-                    });
-                }
-            })
-            .catch(console.error)
+            console.log("BABA")
+        });
 
     </script>
 
